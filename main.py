@@ -72,7 +72,7 @@ class POS :
         self.lblMoP.grid(row=0 , column=0 , sticky=W , padx=5)
         self.cboMoP = ttk.Combobox(ChangeFrame , font=('arial' , 14 , 'bold')  , width=36 , state='readonly' , textvariable=choice , justify=RIGHT )
 
-        self.cboMoP['values'] = ('' , 'Cash' , 'Ture Money' , 'Poung tung')
+        self.cboMoP['values'] = ('' , 'Cash' , 'Ture Money' , 'Poung tung' , 'Prompty pay')
         self.cboMoP.current(0)
         self.cboMoP.grid(row = 0 , column = 1 )
 
@@ -89,6 +89,16 @@ class POS :
         # ===================================== Entry & Label widget =====================================
         self.btnPay = Button(RemoveFrame , padx=2 , font=('arial' , 15 , 'bold') , text='Pay' , width=10 , height=1 , bd=2)
         self.btnPay.grid(row = 0 , column=0 , pady=2 , padx=4)
+
+        self.btnExit = Button(RemoveFrame , padx=2 , font=('arial' , 15 , 'bold') , text='Exit' , width=10 , height=1 , bd=2)
+        self.btnExit.grid(row=0 , column=1 , pady=2 , padx=4)
+
+        self.btnReset = Button(RemoveFrame , padx=2 , font=('arial' , 15 , 'bold') , text='Reset' , width=10 , height=1 , bd=2)
+        self.btnReset.grid(row = 1 , column=0 , pady=2 , padx=4)
+
+        self.btnRemoveItem = Button(RemoveFrame , padx=2 , font=('arial' , 15 , 'bold') , text='Remove Item' , width=10 , height=1 , bd=2)
+        self.btnRemoveItem.grid(row = 1 , column=1 , pady=2 , padx=4)
+
 
 
 
